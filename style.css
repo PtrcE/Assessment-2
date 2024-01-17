@@ -1,0 +1,224 @@
+body {
+  background-color: #EDE9E3;
+  overflow-x: hidden;
+}
+
+.logo-container {
+  background-color: #E7D7C9;
+  background-size: cover;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+h1 {
+  font-family: "Cormorant Garamond", serif;
+  text-align: center;
+  font-size: 70px;
+  font-weight: 900;
+  color: #706757;
+}
+@media screen and (min-width: 411px) and (max-width: 768px) {
+  h1 {
+    font-size: 60px;
+    font-weight: 890;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 411px) {
+  h1 {
+    font-size: 50px;
+    font-weight: 880;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  h1 {
+    font-size: 40px;
+    font-weight: 870;
+  }
+}
+
+.logo {
+  height: 70%;
+  display: block;
+  margin: auto;
+}
+@media screen and (min-width: 411px) and (max-width: 768px) {
+  .logo {
+    height: 50%;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 411px) {
+  .logo {
+    height: 40%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .logo {
+    height: 30%;
+  }
+}
+
+.grid {
+  display: grid;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: flex-end;
+}
+
+.right {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: right;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5 {
+  height: 80%;
+  display: flex;
+  margin: auto;
+}
+@media screen and (min-width: 411px) and (max-width: 768px) {
+  .img1,
+  .img2,
+  .img3,
+  .img4,
+  .img5 {
+    height: 50%;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 411px) {
+  .img1,
+  .img2,
+  .img3,
+  .img4,
+  .img5 {
+    height: 40%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .img1,
+  .img2,
+  .img3,
+  .img4,
+  .img5 {
+    height: 30%;
+  }
+}
+
+.left .textbox, .right .textbox {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-50%);
+  background-color: #c08d8d;
+  margin: auto;
+  padding: 10px;
+  width: 40%;
+}
+@media screen and (min-width: 411px) and (max-width: 768px) {
+  .left .textbox, .right .textbox {
+    width: 35%;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 411px) {
+  .left .textbox, .right .textbox {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .left .textbox, .right .textbox {
+    width: 25%;
+  }
+}
+.left .textbox h3, .right .textbox h3 {
+  font-size: 30px;
+  margin-left: 20px;
+  padding-left: 20px;
+  color: #3b3837;
+  font-family: "Cormorant Garamond", serif;
+  text-align: center;
+}
+@media screen and (min-width: 411px) and (max-width: 768px) {
+  .left .textbox h3, .right .textbox h3 {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 411px) {
+  .left .textbox h3, .right .textbox h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .left .textbox h3, .right .textbox h3 {
+    font-size: 17px;
+  }
+}
+.left .textbox p, .right .textbox p {
+  display: flex;
+  font-size: 20px;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  text-align: left;
+  color: #fff0db;
+  font-family: "Cormorant Garamond", serif;
+  background-color: #c08d8d;
+}
+@media screen and (min-width: 411px) and (max-width: 768px) {
+  .left .textbox p, .right .textbox p {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 411px) {
+  .left .textbox p, .right .textbox p {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .left .textbox p, .right .textbox p {
+    font-size: 12px;
+  }
+}
+
+.comingSoon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #E7D7C9;
+}
+
+.comingsoonContent {
+  background-color: #c08d8d;
+  font-size: 30px;
+}
+.comingsoonContent .text {
+  width: 200px;
+  text-align: center;
+  color: #fff0db;
+}
+@media screen and (min-width: 411px) and (max-width: 768px) {
+  .comingsoonContent {
+    font-size: 27px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 411px) {
+  .comingsoonContent {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .comingsoonContent {
+    font-size: 21px;
+  }
+}/*# sourceMappingURL=style.css.map */

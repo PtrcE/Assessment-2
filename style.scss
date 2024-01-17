@@ -1,0 +1,234 @@
+$c1: #E7D7C9;
+$c2: #706757;
+$c3: #c08d8d;
+$c4: #3b3837;
+$c5: #fff0db;
+$c6: #EDE9E3;
+
+@mixin theme {
+    height: 80%;
+    display: flex;
+    margin: auto;
+}
+
+@mixin mediaQuery($minimum, $maximum) {
+    @media screen and (min-width: $minimum) and (max-width: $maximum) {
+        @content;
+    }
+}
+
+body {
+    background-color: $c6;
+    overflow-x: hidden;
+   
+}
+
+.logo-container {
+    background-color: ($c1);
+    background-size: cover;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+
+
+    
+}
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 900;
+    color: $c2;
+
+    @include mediaQuery(768px, 1440px) {}
+
+    @include mediaQuery(411px, 768px) {
+        font-size: 60px;
+        font-weight: 890;
+    }
+
+    @include mediaQuery(375px, 411px) {
+        font-size: 50px;
+        font-weight: 880;
+    }
+
+    @include mediaQuery(320px, 375px) {
+        font-size: 40px;
+        font-weight: 870;}
+}
+
+.logo {
+    height: 70%;
+    display: block;
+    margin: auto;
+
+    @include mediaQuery(768px, 1440px) {}
+
+    @include mediaQuery(411px, 768px) {
+        height: 50%;
+    }
+
+    @include mediaQuery(375px, 411px) {
+        height: 40%;
+    }
+
+    @include mediaQuery(320px, 375px) {
+        height: 30%;
+    }
+}
+
+.grid {
+    display: grid;
+}
+
+.left {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-end;
+}
+
+.right {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5 {
+    height: 80%;
+    display: flex;
+    margin: auto;
+
+    @include mediaQuery(768px, 1440px) {}
+
+    @include mediaQuery(411px, 768px) {
+        height: 50%;
+    }
+
+    @include mediaQuery(375px, 411px) {
+        height: 40%;
+    }
+
+    @include mediaQuery(320px, 375px) {
+        height: 30%;
+    }
+
+}
+
+
+.left .textbox, .right .textbox {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-50%);
+    background-color: $c3;
+    margin: auto;
+    padding: 10px;
+    width: 40%;  
+
+    @include mediaQuery(768px, 1440px) {}
+
+    @include mediaQuery(411px, 768px) {
+        width: 35%;
+    }
+
+    @include mediaQuery(375px, 411px) {
+        width: 30%;
+    }
+
+    @include mediaQuery(320px, 375px) {
+        width: 25%;
+    }
+
+    h3 {
+        font-size: 30px;
+        margin-left: 20px;
+        padding-left: 20px;
+        color: $c4;
+        font-family: 'Cormorant Garamond', serif;
+        text-align: center;
+
+        @include mediaQuery(768px, 1440px) {}
+
+        @include mediaQuery(411px, 768px) {
+            font-size: 25px;
+        }
+
+        @include mediaQuery(375px, 411px) {
+            font-size: 20px;
+            
+        }
+
+        @include mediaQuery(320px, 375px) {
+            font-size: 17px;
+           
+        }
+    }
+
+    p {
+        display: flex;
+        font-size: 20px;
+        flex-wrap: wrap;
+        margin-left: 10px;
+        text-align: left;
+        color: $c5;
+        font-family: 'Cormorant Garamond', serif;
+        background-color: $c3;
+
+        @include mediaQuery(768px, 1440px) {}
+
+        @include mediaQuery(411px, 768px) {
+            font-size: 16px;
+        }
+
+        @include mediaQuery(375px, 411px) {
+            font-size: 14px;
+        }
+
+        @include mediaQuery(320px, 375px) {
+            font-size: 12px;
+        }
+    }
+}
+
+.comingSoon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: $c1;
+}
+
+.comingsoonContent {
+    background-color: $c3;
+    font-size: 30px;
+
+    .text {
+        width: 200px;
+        text-align: center;
+        color: #fff0db;
+    }
+
+    @include mediaQuery(768px, 1440px) {}
+
+    @include mediaQuery(411px, 768px) {
+        font-size: 27px;
+    }
+
+    @include mediaQuery(375px, 411px) {
+        font-size: 24px;
+    }
+
+    @include mediaQuery(320px, 375px) {
+        font-size: 21px;
+    }
+}
